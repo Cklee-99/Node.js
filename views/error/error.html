@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Nunito+Sans:400,900" rel="stylesheet" />
+    <link rel="icon"
+        href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/microsoft/319/skull_1f480.png" />
+
+    <title>Error</title>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+            background-image: linear-gradient(to bottom right, #648880, #293f50);
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .middle {
+            font-family: 'Megrim', sans-serif;
+            font-weight: bold;
+            color: white;
+            font-size: 5rem;
+            height: 90%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .loading {
+            display: flex;
+            transition: opacity .3s ease-in;
+        }
+
+        .circle {
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 3px;
+            height: 10px;
+            width: 10px;
+            margin-top: 50px;
+            animation: jump .5s ease-in infinite;
+        }
+
+        .circle:nth-of-type(2) {
+            animation-delay: 0.1s;
+        }
+
+        .circle:nth-of-type(3) {
+            animation-delay: 0.2s;
+        }
+
+        @keyframes jump {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="middle">Page not found
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+    </h1>
+</body>
+
+</html>
